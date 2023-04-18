@@ -22,12 +22,13 @@ body {
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .profile-section {
     display: flex;
     flex-grow: 1;
-    margin-top: 2rem;
+
 }
 
 .profile-picture {

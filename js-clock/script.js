@@ -3,11 +3,18 @@
     const minsHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand');
 
+    const tick = new Audio('tick.mp3');
+
+    function playTick() {
+        tick.play();
+    }
+
     function setDate() {
       const now = new Date();
 
       const seconds = now.getSeconds();
       const secondsDegrees = ((seconds / 60) * 360) + 90;
+
       if (seconds === 0) {
         secondHand.style.transition = 'none';
       } else {
@@ -25,5 +32,6 @@
     }
 
     setInterval(setDate, 1000);
+    setInterval(playTick, 1000);
 
     setDate();

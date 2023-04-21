@@ -30,6 +30,17 @@ html {
       0 0 10px rgba(255, 255, 255, 0.2);
   }
 
+  .center-dot {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(202, 202, 202);
+    position: absolute;
+    left: 47%;
+    top: 48%;
+    border-radius: 2rem;
+    z-index: 10;
+  }
+
   .clock-face {
     position: relative;
     width: 100%;
@@ -67,7 +78,7 @@ html {
 
   .st-hour-hand {
     width: 40%;
-    height: 10px;
+    height: 8px;
     background: rgb(255, 255, 255);
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
